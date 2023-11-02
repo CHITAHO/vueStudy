@@ -1,18 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to 양희동, 이제 이 페이지 소스를 찾아봐" />
+  <!-- <HelloWorld msg="양희동 해야할 일 LIST" /> -->
+  <div>
+    각 메뉴 항목 버튼을 클릭 해보시오.
+    <br>
+    1. 각 메뉴 항목에 맞는 새 페이지 생성해보기
+    <br>
+    2. 각 메뉴 항목 클릭 시 페이지 이동 구현해보기
+  </div>
+
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view />
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
@@ -21,6 +23,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
