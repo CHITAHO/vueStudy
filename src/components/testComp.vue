@@ -2,7 +2,7 @@
 <template>
     <div class="menu-bar">
         <ul>
-            <li><a @click="clickMenu1">메뉴 항목 1</a></li>
+            <li><a @click="clickMenu1">메뉴 항목 1123</a></li>
             <li><a @click="clickMenu2">메뉴 항목 2</a></li>
             <li><a @click="clickMenu3">메뉴 항목 3</a></li>
         </ul>
