@@ -3,6 +3,6 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 module.exports = {
-  outputDir: "vueStudy",
+  outputDir: "dist",
   publicPath: '/vueStudy'
 }
