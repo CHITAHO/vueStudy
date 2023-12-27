@@ -2,7 +2,7 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <!-- <HelloWorld msg="양희동 해야할 일 LIST" /> -->
   <div>
-    각 메뉴 항목 버튼을 클릭 해보시오. 자동배포 테스트
+    각 메뉴 항목 버튼을 클릭 해보시오.
     <br><br>
     1. 각 메뉴 항목에 맞는 새 페이지 생성해보기
     <br><br>

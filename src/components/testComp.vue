@@ -10,13 +10,55 @@
 </template>
   
 <script>
+
 export default {
+    data() {
+        return {
+            name: "듀블타이호",
+            ocid: undefined,
+            union: undefined,
+        }
+    },
     methods: {
         clickMenu1() {
-            alert("메뉴항목 1 클릭")
+            var myHeaders = new Headers();
+            myHeaders.append("x-nxopen-api-key", "test_d4d23de7e6fac346bd22bd4ab92546054630f3d320bd9b6296d237328f5e0731aabac9b3aa005976c53593c2554ef6f9");
+
+            var requestOptions = {
+                method: 'GET',
+                headers: myHeaders,
+                redirect: 'follow'
+            };
+
+            fetch(`https://open.api.nexon.com/maplestory/v1/id?character_name=${this.name}`, requestOptions)
+                .then(response => response.text())
+                .then(result => {
+                    this.ocid = JSON.parse(result).ocid;
+                    alert(this.ocid)
+                }
+                )
+                .catch(error => console.log('error', error));
         },
-        clickMenu2() {
-            alert("메뉴항목 2 클릭")
+        async clickMenu2() {
+
+            var myHeaders = new Headers();
+            myHeaders.append("x-nxopen-api-key", "test_d4d23de7e6fac346bd22bd4ab92546054630f3d320bd9b6296d237328f5e0731aabac9b3aa005976c53593c2554ef6f9");
+
+            var requestOptions = {
+                method: 'GET',
+                headers: myHeaders,
+                redirect: 'follow'
+            };
+            await fetch(`https://open.api.nexon.com/maplestory/v1/ranking/union?&date=2023-12-26&ocid=${this.ocid}`, requestOptions)
+                .then(response => response.text())
+                .then(result => {
+                    this.union = JSON.parse(result).ranking[0]
+                    console.log(this.union)
+                }
+                )
+                .catch(error => console.log('error', error));
+
+            alert(this.union.character_name)
         },
         clickMenu3() {
             alert("메뉴항목 3 클릭")
