@@ -14,10 +14,9 @@
                 <div id="item_1" class="item" style="top: 0px; left: 0px;  position:absolute;"><img class="img"
                         src="https://resources.barunsonmcard.com/upload/template/MC1224/8742e454-2ab1-45df-a3fb-823da18af8a7.png"
                         width="430px" height="1423px"></div>
-                <div id="item_2" class="item photo-image" style="top: 318px; left: 108px;  position:absolute;"><img
-                        class="img"
-                        src="https://resources.barunsonmcard.com/upload/template/MC1224/39a27e19-9209-40fd-8572-0cdbc859e6ff.png"
-                        width="430px" height="545.844px"></div>
+                <img class="img"
+                    src="https://resources.barunsonmcard.com/upload/template/MC1224/39a27e19-9209-40fd-8572-0cdbc859e6ff.png"
+                    width="430" height="845">
                 <div id="item_3" class="item"
                     style="top: 938px; left: 0.515625px; position: absolute; width: 160px; height: 82px; align-items: center;">
                     <div class="text"
@@ -52,11 +51,11 @@
             <!-- 초대글 (인사말) -->
             <div id="area2" idx="2" class="templatearea"
                 style="display: block; height: 889px; background-color: rgb(241, 241, 241);">
-                <div id="item_8" class="item" style="top: 0px; left: 0px;  position:absolute;"><img class="img"
+                <div id="item_8" class="item" style="top: -0px; left: 0px;  position:absolute;"><img class="img"
                         src="https://resources.barunsonmcard.com/upload/template/MC1224/49706675-f065-4971-845f-32b2272ba3b4.png"
                         width="430px" height="175px"></div>
                 <div id="item_9" class="item"
-                    style="top: 297px; left: 0px; position: absolute; width: 410px; height: 69.125px; align-items: center;">
+                    style="top: 197px; left: 0px; position: absolute; width: 410px; height: 69.125px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 30px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 2.3em;">
                         서로가 마주보며 다져온 <br>사랑을 이제 함께 한 곳을 <br>바라보며 걸어갈 수 있는 <br>큰 사랑으로 키우고자 합니다.<br>저희 두 사람이 사랑의 이름으로<br>지켜나갈
@@ -183,6 +182,10 @@ export default {
 
 .item {
     display: flex;
+}
+
+.img {
+    width: 100%;
 }
 
 .text {
