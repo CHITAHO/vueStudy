@@ -13,37 +13,37 @@
             <div id="area1" idx="1" class="templatearea" style="display: block; height: 1423px;">
                 <div id="item_1" class="item" style="top: 0px; left: 0px;  position:absolute;"><img class="img"
                         src="https://resources.barunsonmcard.com/upload/template/MC1224/8742e454-2ab1-45df-a3fb-823da18af8a7.png"
-                        width="800px" height="1423px"></div>
+                        width="430px" height="1423px"></div>
                 <div id="item_2" class="item photo-image" style="top: 318px; left: 108px;  position:absolute;"><img
                         class="img"
                         src="https://resources.barunsonmcard.com/upload/template/MC1224/39a27e19-9209-40fd-8572-0cdbc859e6ff.png"
-                        width="588.625px" height="545.844px"></div>
+                        width="430px" height="545.844px"></div>
                 <div id="item_3" class="item"
-                    style="top: 938px; left: 0.515625px; position: absolute; width: 368.797px; height: 82px; align-items: center;">
+                    style="top: 938px; left: 0.515625px; position: absolute; width: 160px; height: 82px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 55px; color: rgb(51, 51, 51); text-align: right; letter-spacing: 0em; line-height: 1.4em;">
                         이준정</div>
                 </div>
                 <div id="item_4" class="item"
-                    style="top: 937px; left: 431.516px; position: absolute; width: 368.797px; height: 82px; align-items: center;">
+                    style="top: 937px; left: 245.516px; position: absolute; width: 160px; height: 82px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 55px; color: rgb(51, 51, 51); text-align: left; letter-spacing: 0em; line-height: 1.4em;">
                         김유은</div>
                 </div>
                 <div id="item_5" class="item"
-                    style="top: 1032px; left: 1.51562px; position: absolute; width: 798.891px; height: 52px; align-items: center;">
+                    style="top: 1032px; left: 1.51562px; position: absolute; width: 430px; height: 52px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 35px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 1.4em;">
                         2024. 02. 03. SAT PM 01:30</div>
                 </div>
                 <div id="item_6" class="item"
-                    style="top: 1080px; left: 0px; position: absolute; width: 800px; height: 52px; align-items: center;">
+                    style="top: 1100px; left: 0px; position: absolute; width: 430px; height: 52px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 35px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 1.4em;">
                         메종 드 프리미어 그랜드홀</div>
                 </div>
                 <div id="item_7" class="item"
-                    style="top: 948px; left: 389.516px; position: absolute; width: 25.6875px; height: 82px; align-items: center;">
+                    style="top: 948px; left: 189.516px; position: absolute; width: 25.6875px; height: 82px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Noto Sans KR&quot;, sans-serif; font-size: 55px; color: rgb(0, 0, 0); text-align: left; letter-spacing: 0em; line-height: 1.4em;">
                         *</div>
@@ -54,12 +54,13 @@
                 style="display: block; height: 889px; background-color: rgb(241, 241, 241);">
                 <div id="item_8" class="item" style="top: 0px; left: 0px;  position:absolute;"><img class="img"
                         src="https://resources.barunsonmcard.com/upload/template/MC1224/49706675-f065-4971-845f-32b2272ba3b4.png"
-                        width="800px" height="175px"></div>
+                        width="430px" height="175px"></div>
                 <div id="item_9" class="item"
-                    style="top: 297px; left: 0px; position: absolute; width: 800px; height: 469.125px; align-items: center;">
+                    style="top: 297px; left: 0px; position: absolute; width: 410px; height: 69.125px; align-items: center;">
                     <div class="text"
-                        style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 34px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 2.3em;">
-                        서로가 마주보며 다져온 사랑을<br>이제 함께 한 곳을 바라보며<br>걸어갈 수 있는 큰 사랑으로 키우고자 합니다.<br>저희 두 사람이 사랑의 이름으로<br>지켜나갈 수 있게
+                        style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 30px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 2.3em;">
+                        서로가 마주보며 다져온 <br>사랑을 이제 함께 한 곳을 <br>바라보며 걸어갈 수 있는 <br>큰 사랑으로 키우고자 합니다.<br>저희 두 사람이 사랑의 이름으로<br>지켜나갈
+                        수 있게
                         앞날을<br>축복해 주시면 감사하겠습니다.</div>
                 </div>
             </div>
@@ -201,10 +202,12 @@ export default {
     background: #fff;
 }
 
-#wrap {
-    max-width: 800px;
-    margin: 0 auto;
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+    /* 모바일에서의 스타일 조정 */
 }
 
-/* Add other styles as needed */</style>
+/* 다른 필요한 스타일 추가 */
+
+/* Add other styles as needed */
+</style>
   
