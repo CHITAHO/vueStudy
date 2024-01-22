@@ -30,19 +30,19 @@
                         김유은</div>
                 </div>
                 <div id="item_5" class="item"
-                    style="top: 1032px; left: 1.51562px; position: absolute; width: 430px; height: 52px; align-items: center;">
+                    style="top: 1032px; left: -10px; position: absolute; width: 430px; height: 52px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 35px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 1.4em;">
                         2024. 02. 03. SAT PM 01:30</div>
                 </div>
                 <div id="item_6" class="item"
-                    style="top: 1100px; left: 0px; position: absolute; width: 430px; height: 52px; align-items: center;">
+                    style="top: 1100px; left: -10px; position: absolute; width: 430px; height: 52px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 35px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 1.4em;">
                         메종 드 프리미어 그랜드홀</div>
                 </div>
                 <div id="item_7" class="item"
-                    style="top: 948px; left: 189.516px; position: absolute; width: 25.6875px; height: 82px; align-items: center;">
+                    style="top: 948px; left: 192.516px; position: absolute; width: 25.6875px; height: 82px; align-items: center;">
                     <div class="text"
                         style="font-family: &quot;Noto Sans KR&quot;, sans-serif; font-size: 55px; color: rgb(0, 0, 0); text-align: left; letter-spacing: 0em; line-height: 1.4em;">
                         *</div>
