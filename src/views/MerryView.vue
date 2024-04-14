@@ -30,9 +30,9 @@
                         김유은</div>
                 </div>
                 <div id="item_5" class="item"
-                    style="top: 1032px; left: -10px; position: absolute; width: 430px; height: 52px; align-items: center;">
+                    style="top: 1032px; left: -11px; position: absolute; width: 430px; height: 52px; align-items: center;">
                     <div class="text"
-                        style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 35px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 1.4em;">
+                        style="font-family: &quot;Nanum Myeongjo&quot;, serif; font-size: 32px; color: rgb(51, 51, 51); text-align: center; letter-spacing: 0em; line-height: 1.4em;">
                         2024. 02. 03. SAT PM 01:30</div>
                 </div>
                 <div id="item_6" class="item"
