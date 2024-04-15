@@ -6,10 +6,10 @@
             <li><a @click="clickMenu2">본캐 확인</a></li>
         </ul>
         <h2>{{ this.union?.character_name }}</h2>
-        <img :src="imgSrc">
+        <img :src="imgSrc" :style="{ width: '120px', height: '150px' }">
     </div>
 </template>
-  
+
 <script>
 
 export default {
@@ -57,6 +57,7 @@ export default {
             await fetch(`https://open.api.nexon.com/maplestory/v1/character/basic?ocid=${this.ocid}&date=${this.date}`, requestOptions)
                 .then(response => response.text())
                 .then(result => {
+                    this.imgSrc = JSON.parse(result).character_image
                     console.log(result)
                 }
                 )
@@ -72,7 +73,7 @@ export default {
             return this.formatDate(yesterdayDate);
         },
         formatDate(date) {
-            const year = date.getFullYear().toString().slice(2);
+            const year = date.getFullYear().toString();
             const month = ('0' + (date.getMonth() + 1)).slice(-2);
             const day = ('0' + date.getDate()).slice(-2);
 
@@ -82,7 +83,7 @@ export default {
     }
 }
 </script>
-  
+
 <style scoped>
 /* 스타일을 추가하세요. */
 .menu-bar {
@@ -105,4 +106,3 @@ a {
     text-decoration: none;
 }
 </style>
-  
