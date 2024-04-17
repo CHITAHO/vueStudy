@@ -6,7 +6,7 @@
             <li><a @click="clickMenu2">본캐 확인</a></li>
         </ul>
         <h2>{{ this.union?.character_name }}</h2>
-        <img :src="imgSrc" :style="{ width: '120px', height: '150px' }">
+        <img v-if="imgSrc" :src="imgSrc" :style="{ width: '120px', height: '150px' }">
     </div>
 </template>
 
@@ -58,7 +58,21 @@ export default {
                 .then(response => response.text())
                 .then(result => {
                     this.imgSrc = JSON.parse(result).character_image
-                    console.log(result)
+                }
+                )
+            await fetch(`https://open.api.nexon.com/maplestory/v1/user/union-raider?ocid=${this.ocid}&date=${this.date}`, requestOptions)
+                .then(response => response.text())
+                .then(result => {
+                    let typeSet = new Set()
+                    let classSet = new Set()
+                    const data = JSON.parse(result)
+                    console.log(data.date)
+                    data.union_block.forEach(item => {
+                        console.log("타입 : ", item.block_type, ", ", "직업 : ", item.block_class)
+                        typeSet.add(item.block_type)
+                        classSet.add(item.block_class)
+                    })
+                    console.log(typeSet, classSet)
                 }
                 )
         },
